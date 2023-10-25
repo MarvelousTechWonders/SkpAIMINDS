@@ -1,0 +1,434 @@
+* {box-sizing: border-box;}h1                                                             
+                                                             
+body {                                                             
+  margin: 0;                                                             
+  font-family: Arial, Helvetica, sans-serif;                                                             
+  background: linear-gradient(rgb(0, 18, 53),rgb(39, 54, 79),lightblue);                                                             
+  background-attachment: fixed;                                                             
+}                                                             
+                                                             
+.topnav {                                                             
+  overflow: hidden;                                                             
+  background:linear-gradient(rgb(0, 24, 53),rgb(56, 139, 255),rgb(27, 26, 48));                                                             
+  position: sticky;                                                             
+  width: auto;                                                             
+                                                               
+}                                                             
+                                                             
+                                                             
+.topnav a {                                                             
+  float: left;                                                             
+  display: block;                                                             
+  color: white;                                                             
+  text-align: center;                                                             
+  padding: 14px 16px;                                                             
+  text-decoration: none;                                                             
+  font-size: 17px;                                                             
+                                                               
+}                                                             
+                                                             
+.topnav a:hover {                                                             
+background:linear-gradient( rgb(0, 24, 53),rgb(56, 139, 255), rgb(0, 24, 53),rgb(56, 139, 255));                                                             
+  color: rgb(255, 255, 255);                                                             
+}                                                             
+                                                             
+.topnav a.active {                                                             
+  background-color: #2196F3;                                                             
+  color: white;                                                             
+}                                                             
+                                                             
+.topnav input[type=text] {                                                             
+  float: right;                                                             
+  padding: 6px;                                                             
+  margin-top: 8px;                                                             
+  margin-right: 16px;                                                             
+  border: none;                                                             
+  font-size: 17px;                                                             
+      border-radius: 50px;}                                                             
+.topnav input[type=text] {                                                             
+    border: 1px solid #417dff;                                                               
+      }                                                             
+                                                             
+                                                             
+@media screen and (max-width: 600px) {                                                             
+  .topnav a, .topnav input[type=text] {                                                             
+    float: none;                                                             
+    display: block;                                                             
+    text-align: left;                                                             
+    width: 100%;                                                             
+    margin: 0;                                                             
+    padding: 14px;                                                             
+    border-radius: 50px;                                                             
+  }                                                             
+                                                               
+  .topnav input[type=text] {                                                             
+    border: 1px solid #417dff;                                                               
+  }                                                             
+}                                                             
+                                                             
+#Skp1 {                                                             
+    font-size: 100px;                                                             
+    font-family: "Orbitron";                                                             
+    color: white;                                                             
+  text-shadow: 1px 1px 20px rgb(255, 255, 255), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue ;                                                             
+                                                                  
+}                                                             
+                                                             
+                                                             
+marquee{                                                             
+                                                             
+    font-family: "Orbitron";                                                             
+    text-shadow: 1px 1px 20px rgb(255, 255, 255), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue;                                                             
+    color:white;                                                             
+}                                                             
+::selection    {                                                             
+                                                             
+    color: #00f7ff;                                                             
+    background: #0011ff;                                                             
+}                                                             
+.Para1 {                                                             
+    color:white;                                                             
+    font-size:25px;                                                             
+}                                                             
+                                                             
+                                                             
+   html {                                                             
+        cursor:  url(/resources/R.png) , auto;                                                             
+      }                                                             
+      h2{                                                             
+        font-family:"Orbitron" ;                                                             
+        text-align: center;                                                             
+        color:white;                                                             
+        font-size: 40px;                                                             
+        text-shadow: 1px 1px 20px rgb(0, 0, 0), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue;                                                             
+    }                                                             
+    * {                                                             
+      margin: 0;                                                             
+      padding: 0;                                                             
+    }                                                             
+                                                                 
+                                                                 
+                                                             
+                                                                 
+                                                             
+                                                                 
+    *                                                             
+    {                                                             
+      margin: 0;                                                             
+      padding: 0;                                                             
+      box-sizing: border-box;                                                             
+    }                                                             
+                                                                 
+                                                             
+                                                                 
+    .container                                                             
+    {                                                             
+      display: flex;                                                             
+      justify-content: center;                                                             
+      align-items: center;                                                             
+      flex-wrap: wrap;                                                             
+      padding: 40px 0;                                                             
+    }                                                             
+                                                                 
+    .container .box                                                             
+    {                                                             
+      position: relative;                                                             
+      width: 320px;                                                             
+      height: 400px;                                                             
+      display: flex;                                                             
+      justify-content: center;                                                             
+      align-items: center;                                                             
+      margin: 40px 30px;                                                             
+      transition: 0.5s;                                                             
+    }                                                             
+                                                                 
+    .container .box::before                                                             
+    {                                                             
+      content:' ';                                                             
+      position: absolute;                                                             
+      top: 0;                                                             
+      left: 50px;                                                             
+      width: 50%;                                                             
+      height: 100%;                                                             
+      text-decoration: none;                                                             
+      background: #fff;                                                             
+      border-radius: 8px;                                                             
+      transform: skewX(15deg);                                                             
+      transition: 0.5s;                                                             
+    }                                                             
+                                                                 
+    .container .box::after                                                             
+    {                                                             
+      content:'';                                                             
+      position: absolute;                                                             
+      top: 0;                                                             
+      left: 50;                                                             
+      width: 50%;                                                             
+      height: 100%;                                                             
+      background: #fff;                                                             
+      border-radius: 8px;                                                             
+      transform: skewX(15deg);                                                             
+      transition: 0.5s;                                                             
+      filter: blur(30px);                                                             
+    }                                                             
+                                                                 
+    .container .box:hover:before,                                                             
+    .container .box:hover:after                                                             
+    {                                                             
+      transform: skewX(0deg);                                                             
+      left: 20px;                                                             
+      width: calc(100% - 90px);                                                             
+                                                                   
+    }                                                             
+                                                                 
+    .container .box:nth-child(1):before,                                                             
+    .container .box:nth-child(1):after                                                             
+    {                                                             
+      background: linear-gradient(315deg, #ffbc00, #ff0058)                                                             
+    }                                                             
+                                                                 
+    .container .box:nth-child(2):before,                                                             
+    .container .box:nth-child(2):after                                                             
+    {                                                             
+      background: linear-gradient(315deg, #0088ff, #ff0095)                                                             
+    }                                                             
+                                                                 
+    .container .box:nth-child(3):before,                                                             
+    .container .box:nth-child(3):after                                                             
+    {                                                             
+      background: linear-gradient(315deg, #4dff03, #00d0ff)                                                             
+    }                                                             
+                                                                 
+    .container .box span                                                             
+    {                                                             
+      display: block;                                                             
+      position: absolute;                                                             
+      top: 0;                                                             
+      left: 0;                                                             
+      right: 0;                                                             
+      bottom: 0;                                                             
+      z-index: 5;                                                             
+      pointer-events: none;                                                             
+    }                                                             
+                                                                 
+    .container .box span::before                                                             
+    {                                                             
+      content:'';                                                             
+      position: absolute;                                                             
+      top: 0;                                                             
+      left: 0;                                                             
+      width: 0;                                                             
+      height: 0;                                                             
+      border-radius: 8px;                                                             
+      background: rgba(255, 255, 255, 0.1);                                                             
+      backdrop-filter: blur(10px);                                                             
+      opacity: 0;                                                             
+      transition: 0.1s;                                                               
+      animation: animate 2s ease-in-out infinite;                                                             
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08)                                                             
+    }                                                             
+                                                                 
+    .container .box:hover span::before                                                             
+    {                                                             
+      top: -50px;                                                             
+      left: 50px;                                                             
+      width: 100px;                                                             
+      height: 100px;                                                             
+      opacity: 1;                                                             
+    }                                                             
+                                                                 
+    .container .box span::after                                                             
+    {                                                             
+      content:'';                                                             
+      position: absolute;                                                             
+      bottom: 0;                                                             
+      right: 0;                                                             
+      width: 100%;                                                             
+      height: 100%;                                                             
+      border-radius: 8px;                                                             
+      background: rgba(255, 255, 255, 0.1);                                                             
+      backdrop-filter: blur(10px);                                                             
+      opacity: 0;                                                             
+      transition: 0.5s;                                                             
+      animation: animate 2s ease-in-out infinite;                                                             
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);                                                             
+      animation-delay: -1s;                                                             
+    }                                                             
+                                                                 
+    .container .box:hover span:after                                                             
+    {                                                             
+      bottom: -50px;                                                             
+      right: 50px;                                                             
+      width: 100px;                                                             
+      height: 100px;                                                             
+      opacity: 1;                                                             
+    }                                                             
+                                                                 
+    @keyframes animate                                                             
+    {                                                             
+      0%, 100%                                                             
+      {                                                             
+        transform: translateY(10px);                                                             
+      }                                                             
+                                                                   
+      50%                                                             
+      {                                                             
+        transform: translate(-10px);                                                             
+      }                                                             
+    }                                                             
+                                                                 
+    .container .box .content                                                             
+    {                                                             
+      position: relative;                                                             
+      left: 0;                                                             
+      padding: 20px 40px;                                                             
+      background: rgba(255, 255, 255, 0.05);                                                             
+      backdrop-filter: blur(10px);                                                             
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);                                                             
+      border-radius: 8px;                                                             
+      z-index: 1;                                                             
+      transform: 0.5s;                                                             
+      color: #fff;                                                             
+    }                                                             
+                                                                 
+    .container .box:hover .content                                                             
+    {                                                             
+      left: -25px;                                                             
+      padding: 60px 40px;                                                             
+    }                                                             
+                                                                 
+    .container .box .content h2                                                             
+    {                                                             
+      font-size: 2em;                                                             
+      color: #fff;                                                             
+      margin-bottom: 10px;                                                             
+    }                                                             
+                                                                 
+    .container .box .content p                                                             
+    {                                                             
+      font-size: 1.1em;                                                             
+      margin-bottom: 10px;                                                             
+      line-height: 1.4em;                                                             
+    }                                                             
+                                                                 
+    .container .box .content a                                                             
+    {                                                             
+      display: inline-block;                                                             
+      font-size: 1.1em;                                                             
+      color: #111;                                                             
+      background: #fff;                                                             
+      padding: 10px;                                                             
+      border-radius: 4px;                                                             
+      text-decoration: none;                                                             
+      font-weight: 700;                                                             
+      margin-top: 5px;                                                             
+    }                                                             
+                                                                 
+    .container .box .content a:hover                                                             
+    {                                                             
+      background: #ffcf4d;                                                             
+      border: 1px solid rgba(255, 0, 88, 0.4);                                                             
+      box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);                                                             
+    }                                                             
+    body {                                                             
+      margin: 0;                                                             
+      font-family: Arial, Helvetica, sans-serif;                                                             
+      background: linear-gradient(rgb(0, 18, 53),rgb(39, 54, 79),lightblue);                                                             
+      background-attachment: fixed;                                                             
+    }                                                             
+                                                                 
+footer {                                                             
+                                                             
+  background:linear-gradient(rgb(0, 255, 255),rgb(0, 0, 97));                                                             
+  width: auto;                                                             
+  height: min-content;                                                             
+}                                                             
+.h {                                                             
+                                                             
+   border-radius: 50px;                                                             
+}                                                             
+#hello {                                                             
+  align-self: center;                                                             
+  color: white;                                                             
+  font-size: 25px;                                                             
+}                                                             
+::-webkit-scrollbar {                                                             
+  width: 10px;                                                             
+  }                                                             
+                                                               
+                                                             
+  ::-webkit-scrollbar-track {                                                             
+  background: #0011ff;                                                             
+  }                                                             
+                                                               
+                                                             
+  ::-webkit-scrollbar-thumb {                                                             
+  text-shadow: 1px 1px 20px rgb(255, 255, 255), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue;                                                             
+  background:linear-gradient(rgb(0, 0, 46),rgb(0, 157, 255),rgb(0, 0, 46));                                                             
+  }                                                             
+h3 {                                                             
+color:white;                                                             
+font-family: "Orbitron";                                                             
+text-align:justify;                                                             
+}                                                             
+.Para1 {                                                             
+  color:white;                                                             
+  font-family: "Orbitron";                                                             
+  }                                                             
+  h1 {                                                             
+                                                             
+      font-size: 100px;                                                             
+      font-family: "Orbitron";                                                             
+      color: white;                                                             
+    text-shadow: 1px 1px 20px rgb(255, 255, 255), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue ;                                                             
+                                                                    
+                                                             
+  }                                                             
+h5 {                                                             
+  font-size: 60px;                                                             
+  font-family: "Orbitron";                                                             
+  color: white;                                                             
+  text-shadow: 1px 1px 20px rgb(255, 255, 255), 0 0 65px rgb(0, 0, 255), 0 0 50px darkblue ;                                                             
+                                                               
+}                                                             
+#mySidenav a {                                                             
+  position: absolute; /* Position them relative to the browser window */                                                             
+  left: -80px; /* Position them outside of the screen */                                                             
+  transition: 0.3s; /* Add transition on hover */                                                             
+  padding: 15px; /* 15px padding */                                                             
+  width: 100px; /* Set a specific width */                                                             
+  text-decoration: none; /* Remove underline */                                                             
+  font-size: 20px; /* Increase font size */                                                             
+  color: white; /* White text color */                                                             
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */                                                             
+}                                                             
+                                                             
+#mySidenav a:hover {                                                             
+  left: 0; /* On mouse-over, make the elements appear as they should */                                                             
+}                                                             
+                                                             
+/* The about link: 20px from the top with a green background */                                                             
+#about {                                                             
+  margin: 30px;                                                             
+  top: 20px;                                                             
+  background-color: #04AA6D;                                                             
+}                                                             
+                                                             
+#blog {                                                             
+  margin: 50px;                                                             
+  top: 80px;                                                             
+  background-color: #2196F3; /* Blue */                                                             
+}                                                             
+                                                             
+#projects {                                                             
+  margin: 70px;                                                             
+  top: 140px;                                                             
+  background-color: #f44336; /* Red */                                                             
+}                                                             
+                                                             
+#contact {                                                             
+  margin: 80px;                                                             
+  top: 200px;                                                             
+  background-color: #555 /* Light Black */                                                             
+}                                                             
+                                                             
